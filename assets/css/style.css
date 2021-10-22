@@ -64,7 +64,8 @@ body {
 }
 
 .header__logo:hover {
-    text-decoration: 
+    opacity: 0.8;
+    transition: .2s linear;
 }
 
 .header__item {
@@ -116,7 +117,6 @@ body {
     border: 2px #fff;
     border-radius: 4px; 
     padding: 20px 40px;
-    color: #191C1F;
     transition: background .2s linear, color .2s linear, font-size .2s linear, border .2s linear;
 }
                             
