@@ -1,3 +1,128 @@
-.body {
-    background-color: red;
+@import url("assets/fonts/stylesheet.css");
+
+body {
+    font-family: 'Graphik LCG', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    line-height: 1.6;
+    color: #fff;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+.container {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1216px;
+}
+
+                                                  /* Header */
+
+.header {        
+    max-width: 1216px;
+    
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 259px;
+}
+
+.header__bg {
+    height: 960px;
+    background: url(../img/1/bg.png) center no-repeat;
+}
+
+.header__name {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Graphik LCG";
+    line-height: 24px;
+    padding-left: 9px;
+}
+
+
+
+.header__nav {
+    padding-top: 26px;
+}
+
+.header__circle--first {
+    position: relative;
+    left: 10px;
+}
+
+.header__logo {
+    padding-top: 26px;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+
+.header__logo:hover {
+    text-decoration: 
+}
+
+.header__item {
+    padding-right: 24px;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+  .header__item:hover {
+    color: #fff;
+    opacity: 0.8;
+    text-decoration: underline 2px;  
+        
+  }
+
+
+
+.header__item:last-child {
+    padding-right: 0;
+}
+
+.header__h1 {
+    font-size: 51px;
+    font-weight: 600;
+    line-height: 64px; 
+    font-style: normal;
+    padding-bottom: 18px;
+}
+
+.header__text {
+    margin: 0 auto;
+    position: absolute;
+    width: 748px;
+    height: 128px;
+    width: 100%;
+    text-align: center;   
+}
+
+.header__suptitle {
+    padding-bottom: 112px;
+}
+
+                                        /* Button */
+.button {
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Graphik LCG';
+    border: 2px #fff;
+    border-radius: 4px; 
+    padding: 20px 40px;
+    color: #191C1F;
+    transition: background .2s linear, color .2s linear, font-size .2s linear, border .2s linear;
+}
+                            
+.button:hover {
+    background-color: inherit;
+    color: #fff;
+    font-size: 26px;
+    border: 3px solid #fff;
 }
