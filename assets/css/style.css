@@ -13,7 +13,7 @@ body {
 *:after {
   box-sizing: border-box;
 }
-
+                                        /* HHH */
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
     font-family: 'Graphik LCG';
@@ -71,6 +71,7 @@ h6 {
 .hr-line {
 	height: 1px;
     border: 1px solid #ECEFF2;
+    opacity: 50%;
 }
 
 
@@ -223,7 +224,8 @@ h6 {
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    padding-top: 80px;
+    padding: 80px;
+    
 }
 
 .third__suptitle {
@@ -249,14 +251,38 @@ h6 {
     padding-top: 57px;
 }
 
+.reviews__text {
+    height: 144px;
+    color: #333;
+    font-family: 'Graphik LCG';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    max-width: 341px;
+}
+.reviews__city {
+    height: 16px;
+    color: #333;
+}
+
 .reviews__padding {
+    display: flex;
     padding: 33px;
     margin: 0 auto;
+    
+}
+.reviews__img {
+    position: relative;
+    top: 10px;
 }
 
 .reviews__slider {
     display: flex;
     padding-right: 33px;
+    max-width: 1216px;
+    margin: 0 auto;    
+    overflow: hidden;
 }
 
 .reviews__block {
@@ -264,15 +290,31 @@ h6 {
 }
 
 .reviews__item {
-    display: inline-block;
     max-width: 341px;
     background:#fff;
     padding: 22px;
-
+    width: 341px;
+    height: 316px;
+    max-height: 316px;;
+    display: block;
+    justify-content: space-between;
 }
 
 .reviews__name {
-    
+    position: relative;
+    bottom: 40px;
+    left: 70px;
+}
+
+.reviews__city {
+    position: relative;
+    font-weight: 400;
+    font-size: 12px;
+    color: #5E646A;
+    font-family: 'Graphik LCG';
+    line-height: 16px;
+    bottom: 30px;
+    left: 70px;
 }
 
 
@@ -289,4 +331,70 @@ h6 {
 
 }
 
+                                        /* Slider */
 
+.carousel {
+    
+    position: relative;
+    width: 1900px;
+    padding: 10px 40px;
+    background: #F6F8FA;
+    height: 564px;
+  }
+  
+  .carousel img {
+    width: 44px;
+    height: 44px;
+    display: block;
+  }
+  
+  .arrow {
+    position: absolute;
+    padding: 0;
+    background: inherit;
+    border-radius: none;
+    border: none;
+    font-size: 40px;
+    color: inherit;
+    display: block;
+    color: #C2C8CD;
+  }
+  
+  .arrow:focus {
+    outline: none;
+  }
+  
+  .arrow:hover {
+    color: #2A6CEA;
+    cursor: pointer;
+  }
+  
+  .prev {      
+    left: 300px;
+    top: 150px;
+  }
+  
+  .next {
+    right: 300px;
+    top: 150px;
+  }
+  
+  .gallery {
+    margin: 0 auto;
+    width: 1216px;
+    overflow: hidden;
+  }
+  
+  .gallery ul {
+    height: 564px;
+    width: 9999px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: margin-left 600ms;
+    font-size: 0;
+  }
+  
+  .gallery li {
+    display: inline-block;
+  }
