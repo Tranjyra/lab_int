@@ -676,11 +676,7 @@ h6 {
           height: 103px;
       }
 
-      .arrow {
-      }
-
-
-      .prev  {
+          .prev  {
           left: 10px;
       }
 
@@ -758,18 +754,23 @@ h6 {
 
       .header__bg {
           height: 670px;
-          width: 360px;
+          width: 320px;
       }
       
       .reviews__block {
           width: 365px;
       }
+
+      .reviews__padding {
+          width: 315px;
+      }
       .next {
-          right: 0;
+          right: 30px;
       }
 
       .carousel {
           width: 350px;
+          padding-left: 28px;
       }
       .third__img {
           width: 288px;
@@ -779,4 +780,23 @@ h6 {
       .container {
           margin: 0 auto;
       }
+
+      .content__text {
+          width: 200px;
+      }
+      
+      .content__item {
+          padding-left: 10px;
+      }
+
+      .header.fixed {
+          width: 320px;
+          right: 45px;
+      }
+
+      .reviews__block {
+          width: 320px;
+          height: 500px;
+      }
+      
   }
