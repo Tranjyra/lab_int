@@ -13,34 +13,40 @@
 </head>
 <body>
 <!-- Говорят, никогда не поздно -->
-<container class="container">    
+ <container class="container " >    
     <div class="header__bg">
-        <header class="header">          
+        <header class="header" id="header">          
                 
-            <a class="header__logo" href="#">
+            <div class="header__logo" href="#" >
                 <img class="header__circle header__circle--first" src="assets/img/2/header/1.png" alt="">
                 <img class="header__circle header__circle--second" src="assets/img/2/header/2.png" alt="">
-                <h5 class="header__name">testLab</h5>
-            </a>
+                <h5 class="header__name" >testLab</h5>
+            </div>
 
-            <div class="header__nav">
-                <a class="header__item" href="#">Как это работает</a>
-                <a class="header__item" href="#">3-й блок</a>
-                <a class="header__item" href="#">Вопросы и ответы</a>
-                <a class="header__item" href="#">Форма</a>
-            </div>                 
+            <nav class="nav" id="nav">
+                <a class="nav__link" href="#" data-scroll="#about">Как это работает</a>
+                <a class="nav__link" href="#" data-scroll="#third">3-й блок</a>
+                <a class="nav__link" href="#" data-scroll="#reviews">Вопросы и ответы</a>
+                <a class="nav__link" href="#">Форма</a>
+            </nav>    
+            
+            <button class="nav-toggle" id="nav_toggle" type="button">
+                <span class="nav-toggle__item">Menu</span>
+          </button>
         </header>  
 
-        <div class="header__text">
-            <h1>Говорят, никогда не поздно<br> сменить профессию</h1>
+        <div class="header__text" id="intro">
+            <div class="header__title">Говорят, никогда не поздно<br> сменить профессию</div>
             <div class="header__suptitle">Сделай круто тестовое задание и у тебя получится</div>
            <form action="https://internetlab.ru/"><button type="submit" href= "#" class="button">Проще простого!</button></form>
         </div>         
     </div> 
-</container>
+</container> 
+
+
 
 <!-- Как это работает -->
-<container class="container">
+<container class="container" id="about">
     <h2 class="content__title">Как это работает</h2>
     <div class="content__slider">
         <div class="content__item">
@@ -60,7 +66,7 @@
         </div>
 
         <div class="content__item">
-            <img src="assets/img/3/3.png" alt="">
+            <img src="assets/img/3/3.png" alt="" id="third">
             <div class="content__text">
                 <h6>Сделай хорошо</h6>
                 <div class="content__description">Чтобы мы могли тебе доверить подобные задачи в будущем</div>
@@ -81,198 +87,198 @@
 </container>
 
 <!-- Круто, ты дошел до третьего блока -->
-<container class="container">
+<container class="container" >
     <div class="third__content">
         <div class="third__text">
-            <h3>Круто, ты дошел до третьего блока</h3>
+            <div class="third__title" >Круто, ты дошел до третьего блока</div>
             <div class="third__suptitle">63% опрошенных пользовались кредитами из-за того, что не могли покрыть непредвиденные расходы свыше 15 000 ₽.</div><br>
             <div class="third__suptitle">Доступ к заработанным деньгам помогает отказаться от кредитов и экономить деньги на процентах и штрафах.</div>
         </div>
 
-        <img src="assets/img/4/1.png" alt="" class="third__img">
+        <img src="assets/img/4/1.png" alt="" class="third__img" >
     </div>
 </container>
 
   <!-- Отзывы -->
-<div class="reviews__block">
-        <h2 class="reviews__title">Отзывы</h2> 
-
-
-<div id="carousel" class="carousel">
-    <button class="arrow prev"><i class="fas fa-chevron-left"></i></button>
-    <div class="gallery">
-      <ul class="images">
-        <li>  
-            <div class="reviews__padding">
-                <div class="reviews__item">                    
-                    <img src="assets/img/5/1.png" alt="" class="reviews__img">
-                    <h6 class="reviews__name">Константинов Михаил<br> Павлович</h6>
-                    <h6 class="reviews__city">Санкт-Петербург</h6>                
-                    <div class="reviews__text">Каждый из нас понимает очевидную вещь:
-                    перспективное планирование
-                    предоставляет широкие возможности для анализа
-                    существующих паттернов поведения. В своём стремлении
-                    улучшить пользовательский опыт мы </div>
-                </div>
-            </div> 
-        </li>
-        <li>
-            <div class="reviews__padding">
-                <div class="reviews__item">                    
-                    <img src="assets/img/5/2.png" alt="" class="reviews__img">
-                    <h6 class="reviews__name">Иван Иванов<br> </h6>
-                    <h6 class="reviews__city">Санкт-Петербург</h6>                
-                    <div class="reviews__text">Каждый из нас понимает очевидную вещь:
-                        перспективное планирование предоставляет широкие
-                        возможности для анализа существующих
-                        паттернов поведения. В своём стремлении
-                        улучшить пользовательский опыт мы упускаем,
-                        что активно развивающиеся страны третьего
-                        мира призваны к ответу. </div>
-                </div>
-            </div> 
-        </li>
-        <li>
-            <div class="reviews__padding">
-                <div class="reviews__item">                    
-                    <img src="assets/img/5/3.png" alt="" class="reviews__img">
-                    <h6 class="reviews__name">Артём Корнилов<br> </h6>
-                    <h6 class="reviews__city">Санкт-Петербург</h6>                
-                    <div class="reviews__text">Каждый из нас понимает очевидную вещь:
-                    перспективное планирование
-                    предоставляет широкие возможности для анализа
-                    существующих паттернов поведения. В своём стремлении
-                    улучшить пользовательский опыт мы </div>
-                </div>
-            </div> 
-        </li>
-        <li>
-            <div class="reviews__padding">
-                <div class="reviews__item">                    
-                    <img src="assets/img/5/2.png" alt="" class="reviews__img">
-                    <h6 class="reviews__name">Семён Васильев<br> Дмитриевич</h6>
-                    <h6 class="reviews__city">Самара</h6>                
-                    <div class="reviews__text">Каждый из нас понимает очевидную вещь:
-                    перспективное планирование
-                    предоставляет широкие возможности для анализа
-                    существующих паттернов поведения. В своём стремлении
-                    улучшить пользовательский опыт мы </div>
-                </div>
-            </div> 
-        </li>
-        <li>
-            <div class="reviews__padding">
-                <div class="reviews__item">                    
-                    <img src="assets/img/5/1.png" alt="" class="reviews__img">
-                    <h6 class="reviews__name">Андрей Киселёв<br> Петрович</h6>
-                    <h6 class="reviews__city">Ташкент</h6>                
-                    <div class="reviews__text">Каждый из нас понимает очевидную вещь:
-                    перспективное планирование
-                    предоставляет широкие возможности для анализа
-                    существующих паттернов поведения. В своём стремлении
-                    улучшить пользовательский опыт мы </div>
-                </div>
-            </div> 
-        </li>
-        <li>
-            <div class="reviews__padding">
-                <div class="reviews__item">                    
-                    <img src="assets/img/5/2.png" alt="" class="reviews__img">
-                    <h6 class="reviews__name">Михалёв Артём<br> Константинович</h6>
-                    <h6 class="reviews__city">Самара</h6>                
-                    <div class="reviews__text">Каждый из нас понимает очевидную вещь:
-                    перспективное планирование
-                    предоставляет широкие возможности для анализа
-                    существующих паттернов поведения. В своём стремлении
-                    улучшить пользовательский опыт мы </div>
-                </div>
-            </div> 
-        </li>
-        <li>
-            <div class="reviews__padding">
-                <div class="reviews__item">                    
-                    <img src="assets/img/5/3.png" alt="" class="reviews__img">
-                    <h6 class="reviews__name">Еще один Важный<br> Клиент</h6>
-                    <h6 class="reviews__city">Москва</h6>                
-                    <div class="reviews__text">Каждый из нас понимает очевидную вещь:
-                    перспективное планирование
-                    предоставляет широкие возможности для анализа
-                    существующих паттернов поведения. В своём стремлении
-                    улучшить пользовательский опыт мы </div>
-                </div>
-            </div> 
-        </li>
-        <li>
-            <div class="reviews__padding">
-                <div class="reviews__item">                    
-                    <img src="assets/img/5/2.png" alt="" class="reviews__img">
-                    <h6 class="reviews__name">И еще Один<br> Клиент</h6>
-                    <h6 class="reviews__city">Санкт-Петербург</h6>                
-                    <div class="reviews__text">Каждый из нас понимает очевидную вещь:
-                    перспективное планирование
-                    предоставляет широкие возможности для анализа
-                    существующих паттернов поведения. В своём стремлении
-                    улучшить пользовательский опыт мы </div>
-                </div>
-            </div> 
-        </li>
-        <li>
-            <div class="reviews__padding">
-                <div class="reviews__item">                    
-                    <img src="assets/img/5/1.png" alt="" class="reviews__img">
-                    <h6 class="reviews__name">Бибик Бибиков<br> </h6>
-                    <h6 class="reviews__city">Санкт-Петербург</h6>                
-                    <div class="reviews__text">Каждый из нас понимает очевидную вещь:
-                    перспективное планирование
-                    предоставляет широкие возможности для анализа
-                    существующих паттернов поведения. В своём стремлении
-                    улучшить пользовательский опыт мы </div>
-                </div>
-            </div> 
-        </li>
-        <li>
-            <div class="reviews__padding">
-                <div class="reviews__item">                    
-                    <img src="assets/img/5/1.png" alt="" class="reviews__img">
-                    <h6 class="reviews__name">Lorem Ipsum<br> Dolor</h6>
-                    <h6 class="reviews__city">Sit</h6>                
-                    <div class="reviews__text">Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Deleniti ducimus
-                        vel rerum? Distinctio, atque! Lorem ipsum dolor sit, amet
-                         consectetur adipisicing elit. Exercitationem, ut? </div>
-                </div>
-            </div> 
-        </li>
-        <li>
-            <div class="reviews__padding">
-                <div class="reviews__item">                    
-                    <img src="assets/img/5/1.png" alt="" class="reviews__img">
-                    <h6 class="reviews__name">Lorem Ipsum<br> Dolor</h6>
-                    <h6 class="reviews__city">Sit dolor</h6>                
-                    <div class="reviews__text">Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Deleniti ducimus
-                        vel rerum? Distinctio, atque! Lorem ipsum dolor sit amet consectetur. </div>
-                </div>
-            </div> 
-        </li>
-        <li>
-            <div class="reviews__padding">
-                <div class="reviews__item">                    
-                    <img src="assets/img/5/1.png" alt="" class="reviews__img">
-                    <h6 class="reviews__name">Lorem Ipsum<br> Dolor</h6>
-                    <h6 class="reviews__city">Lorem sit</h6>                
-                    <div class="reviews__text">Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Deleniti ducimus
-                        vel rerum? Distinctio, atque! Lorem ipsum dolor sit amet
-                         consectetur adipisicing elit. Hic? </div>
-                </div>
-            </div> 
-         </li>
-      </ul>
-    </div>
-    <button class="arrow next"><i class="fas fa-chevron-right"></i></button>
-  </div>
+<div class="reviews__block" id="reviews">
+        <h2 class="reviews__title">Отзывы</h2>
+        <div id="carousel" class="carousel">      
+                <div class="gallery">
+                    <button class="arrow prev"><i class="fas fa-chevron-left"></i></button>       
+                    <ul class="images">                    
+                        <li>  
+                            <div class="reviews__padding">
+                                <div class="reviews__item">                    
+                                    <img src="assets/img/5/1.png" alt="" class="reviews__img">
+                                    <h6 class="reviews__name">Константинов Михаил<br> Павлович</h6>
+                                    <h6 class="reviews__city">Санкт-Петербург</h6>                
+                                    <div class="reviews__text">Каждый из нас понимает очевидную вещь:
+                                    перспективное планирование
+                                    предоставляет широкие возможности для анализа
+                                    существующих паттернов поведения. В своём стремлении
+                                    улучшить пользовательский опыт мы </div>
+                                </div>
+                            </div> 
+                        </li>
+                        <li>
+                            <div class="reviews__padding">
+                                <div class="reviews__item">                    
+                                    <img src="assets/img/5/2.png" alt="" class="reviews__img">
+                                    <h6 class="reviews__name">Иван Иванов<br> </h6>
+                                    <h6 class="reviews__city">Санкт-Петербург</h6>                
+                                    <div class="reviews__text">Каждый из нас понимает очевидную вещь:
+                                        перспективное планирование предоставляет широкие
+                                        возможности для анализа существующих
+                                        паттернов поведения. В своём стремлении
+                                        улучшить пользовательский опыт мы упускаем,
+                                        что активно развивающиеся страны третьего
+                                        мира призваны к ответу. </div>
+                                </div>
+                            </div> 
+                        </li>
+                        <li>
+                            <div class="reviews__padding">
+                                <div class="reviews__item">                    
+                                    <img src="assets/img/5/3.png" alt="" class="reviews__img">
+                                    <h6 class="reviews__name">Артём Корнилов<br> </h6>
+                                    <h6 class="reviews__city">Санкт-Петербург</h6>                
+                                    <div class="reviews__text">Каждый из нас понимает очевидную вещь:
+                                    перспективное планирование
+                                    предоставляет широкие возможности для анализа
+                                    существующих паттернов поведения. В своём стремлении
+                                    улучшить пользовательский опыт мы </div>
+                                </div>
+                            </div> 
+                        </li>
+                        <li>
+                            <div class="reviews__padding">
+                                <div class="reviews__item">                    
+                                    <img src="assets/img/5/2.png" alt="" class="reviews__img">
+                                    <h6 class="reviews__name">Семён Васильев<br> Дмитриевич</h6>
+                                    <h6 class="reviews__city">Самара</h6>                
+                                    <div class="reviews__text">Каждый из нас понимает очевидную вещь:
+                                    перспективное планирование
+                                    предоставляет широкие возможности для анализа
+                                    существующих паттернов поведения. В своём стремлении
+                                    улучшить пользовательский опыт мы </div>
+                                </div>
+                            </div> 
+                        </li>
+                        <li>
+                            <div class="reviews__padding">
+                                <div class="reviews__item">                    
+                                    <img src="assets/img/5/1.png" alt="" class="reviews__img">
+                                    <h6 class="reviews__name">Андрей Киселёв<br> Петрович</h6>
+                                    <h6 class="reviews__city">Ташкент</h6>                
+                                    <div class="reviews__text">Каждый из нас понимает очевидную вещь:
+                                    перспективное планирование
+                                    предоставляет широкие возможности для анализа
+                                    существующих паттернов поведения. В своём стремлении
+                                    улучшить пользовательский опыт мы </div>
+                                </div>
+                            </div> 
+                        </li>
+                        <li>
+                            <div class="reviews__padding">
+                                <div class="reviews__item">                    
+                                    <img src="assets/img/5/2.png" alt="" class="reviews__img">
+                                    <h6 class="reviews__name">Михалёв Артём<br> Константинович</h6>
+                                    <h6 class="reviews__city">Самара</h6>                
+                                    <div class="reviews__text">Каждый из нас понимает очевидную вещь:
+                                    перспективное планирование
+                                    предоставляет широкие возможности для анализа
+                                    существующих паттернов поведения. В своём стремлении
+                                    улучшить пользовательский опыт мы </div>
+                                </div>
+                            </div> 
+                        </li>
+                        <li>
+                            <div class="reviews__padding">
+                                <div class="reviews__item">                    
+                                    <img src="assets/img/5/3.png" alt="" class="reviews__img">
+                                    <h6 class="reviews__name">Еще один Важный<br> Клиент</h6>
+                                    <h6 class="reviews__city">Москва</h6>                
+                                    <div class="reviews__text">Каждый из нас понимает очевидную вещь:
+                                    перспективное планирование
+                                    предоставляет широкие возможности для анализа
+                                    существующих паттернов поведения. В своём стремлении
+                                    улучшить пользовательский опыт мы </div>
+                                </div>
+                            </div> 
+                        </li>
+                        <li>
+                            <div class="reviews__padding">
+                                <div class="reviews__item">                    
+                                    <img src="assets/img/5/2.png" alt="" class="reviews__img">
+                                    <h6 class="reviews__name">И еще Один<br> Клиент</h6>
+                                    <h6 class="reviews__city">Санкт-Петербург</h6>                
+                                    <div class="reviews__text">Каждый из нас понимает очевидную вещь:
+                                    перспективное планирование
+                                    предоставляет широкие возможности для анализа
+                                    существующих паттернов поведения. В своём стремлении
+                                    улучшить пользовательский опыт мы </div>
+                                </div>
+                            </div> 
+                        </li>
+                        <li>
+                            <div class="reviews__padding">
+                                <div class="reviews__item">                    
+                                    <img src="assets/img/5/1.png" alt="" class="reviews__img">
+                                    <h6 class="reviews__name">Бибик Бибиков<br> </h6>
+                                    <h6 class="reviews__city">Санкт-Петербург</h6>                
+                                    <div class="reviews__text">Каждый из нас понимает очевидную вещь:
+                                    перспективное планирование
+                                    предоставляет широкие возможности для анализа
+                                    существующих паттернов поведения. В своём стремлении
+                                    улучшить пользовательский опыт мы </div>
+                                </div>
+                            </div> 
+                        </li>
+                        <li>
+                            <div class="reviews__padding">
+                                <div class="reviews__item">                    
+                                    <img src="assets/img/5/1.png" alt="" class="reviews__img">
+                                    <h6 class="reviews__name">Lorem Ipsum<br> Dolor</h6>
+                                    <h6 class="reviews__city">Sit</h6>                
+                                    <div class="reviews__text">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Deleniti ducimus
+                                        vel rerum? Distinctio, atque! Lorem ipsum dolor sit, amet
+                                        consectetur adipisicing elit. Exercitationem, ut? </div>
+                                </div>
+                            </div> 
+                        </li>
+                        <li>
+                            <div class="reviews__padding">
+                                <div class="reviews__item">                    
+                                    <img src="assets/img/5/1.png" alt="" class="reviews__img">
+                                    <h6 class="reviews__name">Lorem Ipsum<br> Dolor</h6>
+                                    <h6 class="reviews__city">Sit dolor</h6>                
+                                    <div class="reviews__text">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Deleniti ducimus
+                                        vel rerum? Distinctio, atque! Lorem ipsum dolor sit amet consectetur. </div>
+                                </div>
+                            </div> 
+                        </li>
+                        <li>
+                            <div class="reviews__padding">
+                                <div class="reviews__item">                    
+                                    <img src="assets/img/5/1.png" alt="" class="reviews__img">
+                                    <h6 class="reviews__name">Lorem Ipsum<br> Dolor</h6>
+                                    <h6 class="reviews__city">Lorem sit</h6>                
+                                    <div class="reviews__text">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Deleniti ducimus
+                                        vel rerum? Distinctio, atque! Lorem ipsum dolor sit amet
+                                        consectetur adipisicing elit. Hic? </div>
+                                </div>
+                            </div> 
+                        </li>
+                    </ul>
+                    <button class="arrow next"><i class="fas fa-chevron-right"></i></button>
+                </div>                
+        </div>
+ 
 </div>
+
 
   <!-- Низ -->
 <footer class="footer">   
@@ -280,6 +286,9 @@
         © 2021 Лаборатория интернет</div>
 </footer>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+</script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="assets/js/script.js"></script>
 </body>
 </html>
